@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a36a88f87c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- home -->
+
+    <div id="header">
+        <div class="container">
+
+            <!-- nav -->
+            <nav>
+                <span id="name"> <span id="highligh">I</span>swa<span id="highligh">r</span>ya</span>
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- nav -->
+
+            <!-- content -->
+
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I'm <span class="auto-input"></span>,<br> from Salem</h1>
+            </div>
+
+
+            <!-- content -->
+        </div>
+    </div>
+
+
+    <!-- home -->
+
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- col1 -->
+                <div class="about-col-1 image-container">
+                    <!-- <img src="image/my-about2.jpg" alt="" class="about-img"> -->
+                </div>
+                <!-- col1 -->
+
+                <!-- col2 -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Iswarya, a passionate and motivated aspiring frontend web developer hailing from Salem. I
+                        possess a solid foundation in web development, with expertise in HTML, CSS, Bootstrap,
+                        JavaScript, and the React.js library, which collectively empower me to craft dynamic,
+                        responsive, and visually appealing websites</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+
+                    <!-- skill -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <!-- <ul>
+                            <li><span>HTML</span> <br>
+                                Intermediate knowledge of HTML, capable of developing interactive web
+                                content and responsive designs.</li>
+                            <li><span>CSS</span> <br>
+                                Intermediate expertise in CSS for enhancing web layouts and styling,
+                                including responsiveness and animations</li>
+                            <li><span>JavaScript</span> <br>
+                                Intermediate JavaScript skills for building interactive web
+                                applications and implementing complex functionalities</li>
+                            <li><span>Bootstrap</span> <br>
+                                Intermediate-level expertise in Bootstrap, utilizing its
+                                components and grid-system for responsive and visually appealing web designs.</li>
+                            <li><span>React.Js</span> <br>
+                                Intermediate proficiency in React.js, adept at developing
+                                interactive web applications with reusable components and state management</li>
+
+                        </ul> -->
+
+                        <div class="row row-1">
+
+                            <div class="hover02 column">
+                                <h4>HTML</h4>
+                                <figure> <img src="image/html.png" alt="Image 1" class="image"></figure>
+                            </div>
+
+                            <div class="column hover02">
+                                <h4>CSS</h4>
+                                <figure><img src="image/css-3.png" alt="Image 2" class="image"></figure>
+                            </div>
+                            <div class="column hover02">
+                                <h4>Bootstrap</h4>
+                                <figure><img src="image/bootstrap.png" alt="Image 3" class="image"></figure>
+                            </div>
+                            <div class="column hover02">
+                                <h4>Javascript</h4>
+                                <figure><img src="image/js.png" alt="Image 4" class="image"></figure>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row ">
+
+                            <div class="column hover02">
+                                <h4>React.JS</h4>
+                                <figure> <img src="image/react.png" alt="Image 4" class="image "></figure>
+                            </div>
+                            <div class="column hover02">
+                                <h4>Redux</h4>
+                                <figure> <img src="image/redux.svg" alt="Image 4" class="image "></figure>
+                            </div>
+                            <div class="column hover02">
+                                <h4>Github</h4>
+                                <figure><img src="image/github-sign.png" alt="Image 4" class="image "></figure>
+                            </div>
+                            <div class="column hover02">
+                                <h4>supabase</h4>
+                                <figure><img src="image/supabase.svg" alt="Image 4" class="image "></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skill -->
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2021</span>
+                                <br>
+                                Bachelor of Computer Applications
+                                <br>
+                                Percentage - 88%
+                                <br>
+                                Shri Sakthikailassh women's College - Salem
+                            </li>
+                            <li><span>2021 - 2023</span>
+                                <br>
+                                Masters in Computer Science
+                                <br>
+                                Percentage - 84%
+                                <br>
+                                Shri Sakthikailassh women's College - Salem
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+
+
+                    <!-- certification -->
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>HMTL 4.01 & 5 + CSS 3</span>
+                                <br>
+                                Certification by Besant Technologies Institute, Chennai
+                                <br>
+                                year - 2023
+                                <br>
+                                Credential ID BDZ-83682
+                            </li>
+
+                            <li><span>JavaScript</span>
+                                <br>
+                                Certification by Besant Technologies Institute, Chennai
+                                <br>
+                                year - 2023
+                                <br>
+                                Credential ID BDZ-83682
+                            </li>
+
+                            <li><span>React.Js</span>
+                                <br>
+                                Certification by Besant Technologies Institute, Chennai
+                                <br>
+                                year - 2023
+                                <br>
+                                Credential ID BDZ-83682
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- certification -->
+                </div>
+                <!-- col2 -->
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+
+
+    <!-- project -->
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Project</div>
+
+
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+
+
+                <label for="s1" id="slide1"><img src="image/calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator Application</h3>
+                        <p>Technologies Used: HTML, CSS, Bootstrap, JavaScript – July/2023, created a responsive
+                            calculator with precise calculations, emphasizing my proficiency in designing user-friendly
+                            interfaces and implementing accurate mathematical functions.</p>
+                        <a href="https://iceuu.github.io/Calculator/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </label>
+
+
+                <label for="s2" id="slide2"><img src="image/flipkart-clone.jpg" alt="">
+                    <div class="layer">
+                        <h3>Flipkart-Clone Application</h3>
+                        <p>Technologies Used: HTML, CSS, JavaScript, Supabase, React.JS, Redux–sep/2023, I developed a
+                            Flipkart clone featuring robust validation, a product catalog, and a seamless shopping cart
+                            experience using React.js and Redux, showcasing my proficiency in front-end development and
+                            state management for complex web applications</p>
+                        <a href="https://iceuu.github.io/Flipkart-Clone/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </label>
+
+
+                <label for="s3" id="slide3"><img src="image/ticket-booking.png" alt="">
+                    <div class="layer">
+                        <h3>Bus Reservation System</h3>
+                        <p>Technologies Used: HTML, CSS, JavaScript – July/2023, Enabling users to seamlessly log in
+                            using unique credentials and securely reserve multiple tickets and booking by allowing users
+                            to select their desired origin and destination</p>
+                        <a href="https://iceuu.github.io/Bus-Reservation/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </label>
+
+
+                <label for="s4" id="slide4"><img src="image/form.jpg" alt="">
+                    <div class=" layer">
+                        <h3>Form Validation</h3>
+                        <p>Technologies Used: HTML, CSS, JavaScript – July/2023, I led a form validation project with
+                            incorporated robust password creteria and verified email Id functionalities.</p>
+                        <a href="https://iceuu.github.io/form-validation/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </label>
+
+
+                <label for="s5" id="slide5"><img src="image/weather.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather Application</h3>
+                        <p>Technologies Used: HTML, CSS, JavaScript, API – July/2023, I successfully developed a weather
+                            application that leverages the Weather Map API, enabling users to conveniently access and
+                            monitor current weather conditions.</p>
+                        <a href="https://iceuu.github.io/Weather-App/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </label>
+
+
+            </section>
+
+
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+
+    </div>
+    <!-- project -->
+
+
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> iswaryagunasekeran77@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6369882050</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/iceuuu_77"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/iswarya77/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Iceuu"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="image/iswarya-resume.pdf" download class="btn btn2">Download Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+
+
+    <div class="copyright">
+        <p>copyright <span>&copy;</span> Iswarya</p>
+    </div>
+
+    <!-- script -->
+
+
+    <script src="/script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input",
+            {
+                strings: ["Iswarya G", "Web Developer", "UI Designer"],
+                typeSpeed: 100,
+                backDelay: 2000,
+                loop: true,
+                loopCount: true,
+            })
+    </script>
+
+</body>
+
+</html>
