@@ -691,8 +691,8 @@ nav .fa-solid {
 
     .contact-left p i {
         color: rgb(46, 221, 252);
-        margin-right: 5px;
-        font-size: 25px;
+        margin-right: 2px;
+        font-size: 20px;
     }
 
     .about-col-1,
@@ -818,11 +818,14 @@ nav .fa-solid {
     }
 
 
-
+    #contact {
+        background-color: white;
+        margin-top: 20px;
+    }
 
     input[type=radio] {
         position: relative;
-        top: 290%;
+        top: 350%;
         left: 45%;
         width: 12px;
         height: 20px;
