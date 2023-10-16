@@ -624,7 +624,6 @@ input[type=radio]:checked {
     width: 300px;
 }
 
-
 @keyframes tonext {
     75% {
         left: 0;
@@ -679,19 +678,6 @@ input[type=radio]:checked {
     }
 }
 
-body {
-    max-width: 37.5rem;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent;
-    /* thumb and track color */
-    scrollbar-width: 0px;
-}
 
 *::-webkit-scrollbar {
     width: 0;
@@ -740,8 +726,8 @@ li {
 .carousel__slide {
     position: relative;
     flex: 0 0 100%;
-    width: 100%;
-    background-color: #f99;
+    width: 90%;
+    background-image: url("image/ticket-booking.png");
     counter-increment: item;
 }
 
