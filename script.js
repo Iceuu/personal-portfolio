@@ -58,28 +58,4 @@ $(document).ready(function () {
 
 
 
-const carousel = document.querySelector(".carousel");
-const slides = document.querySelectorAll(".slide");
-const prevButton = document.getElementById("prev");
-const nextButton = document.getElementById("next");
-
-let currentIndex = 0;
-
-prevButton.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
-});
-
-nextButton.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-});
-
-function updateCarousel() {
-    const angle = (360 / slides.length) * currentIndex * -1;
-    carousel.style.transform = `rotateY(${angle}deg)`;
-}
-
-updateCarousel();
-
 
