@@ -674,17 +674,13 @@ li {
 
 
 .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    margin-top: -900px;
     height: 100vh;
     display: flex;
     overflow-x: scroll;
-    counter-reset: item;
+    /* counter-reset: item;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory; */
 }
 
 .carousel__slide {
@@ -722,7 +718,7 @@ li {
     bottom: 0;
     left: 0; */
     text-align: center;
-    margin-top: -10%;
+    margin-top: 3%;
 }
 
 .carousel__navigation-list,
@@ -864,18 +860,9 @@ nav .fa-solid {
 
 
     .carousel__viewport {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh;
+        margin-top: -200px;
         display: flex;
         overflow-x: scroll;
-        counter-reset: item;
-        scroll-behavior: smooth;
-        scroll-snap-type: x mandatory;
     }
 
     .carousel__slide {
@@ -883,6 +870,7 @@ nav .fa-solid {
         flex: 0 0 100%;
         width: 90%;
         counter-increment: item;
+        height: 20vh;
     }
 
 
@@ -896,16 +884,14 @@ nav .fa-solid {
         font-size: 2em;
     }
 
-    .carousel__snapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        scroll-snap-align: center;
-    }
 
     .video-box>video {
         width: 100%;
-        height: 50vh;
+        max-height: 80vh;
+    }
+
+    .content {
+        display: none;
     }
 
 
@@ -914,8 +900,12 @@ nav .fa-solid {
         right: 0;
         bottom: 0;
         left: 0; */
-        margin-top: 9%;
+        margin-top: -130%;
         text-align: center;
+    }
+
+    .sub-title {
+        margin-bottom: 40px;
     }
 
     .carousel__navigation-list,
@@ -926,8 +916,8 @@ nav .fa-solid {
     .carousel__navigation-button {
         cursor: pointer;
         display: inline-block;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 20px;
+        height: 20px;
         background-color: #333;
         background-clip: content-box;
         border: 0.25rem solid transparent;
