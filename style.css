@@ -687,12 +687,12 @@ li {
     position: relative;
     flex: 0 0 100%;
     width: 90%;
-    counter-increment: item;
+    /* counter-increment: item; */
 }
 
 
 .carousel__slide:before {
-    content: counter(item);
+    /* content: counter(item); */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -869,13 +869,13 @@ nav .fa-solid {
         position: relative;
         flex: 0 0 100%;
         width: 90%;
-        counter-increment: item;
+        /* counter-increment: item; */
         height: 20vh;
     }
 
 
     .carousel__slide:before {
-        content: counter(item);
+        /* content: counter(item); */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -932,4 +932,13 @@ nav .fa-solid {
     }
 
 
+}
+
+
+#msg {
+    color: green;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
 }
